@@ -5,6 +5,29 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
+
+
 export class AppComponent {
-  title = 'Angular';
+  tasks: Task[] = [
+    {taskName: "Fazer Comida", done: true},
+    {taskName: "Tomar banho", done: true},
+    {taskName: "Lavar roupa", done: false},
+    {taskName: "Dormir", done: false},    
+  ];
+
+  add(taskName, done){
+    let task: Task = { taskName: taskName, done: done};
+    this.tasks.push(task);
+    console.log(task);
+  }
+
+  del(index){
+    this.tasks.slice(1, index);
+  }
+
+}
+
+class Task {
+  taskName: string;
+  done: boolean;  
 }
