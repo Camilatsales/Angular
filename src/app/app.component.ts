@@ -12,22 +12,21 @@ export class AppComponent {
     {taskName: "Fazer Comida", done: true},
     {taskName: "Tomar banho", done: true},
     {taskName: "Lavar roupa", done: false},
-    {taskName: "Dormir", done: false},    
+    {taskName: "Dormir", done: false},
   ];
 
-  add(taskName, done){
-    let task: Task = { taskName: taskName, done: done};
+  add(_taskName, _done){
+    let task: Task = { taskName: _taskName, done: _done};
     this.tasks.push(task);
-    console.log(task);
   }
 
   del(index){
-    this.tasks.slice(1, index);
+    this.tasks.splice(index, 1);
   }
 
 }
 
 class Task {
-  taskName: string;
-  done: boolean;  
+  public taskName: string;
+  public done: boolean;  
 }

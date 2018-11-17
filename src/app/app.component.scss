@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#tarefa {
+    text-align: center;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 40px;
+    margin: 5px;
+}
+
+#salvar {
+    padding: 15px;
+}
+
+
+
+ul { 
+    background-color: darkslategrey; 
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 450px;
+}
+
+h2 {
+    border-bottom: double;
+    margin: 5px;
+    margin-bottom: 15px;
+}
+
+button {
+    margin: 5px;
+    padding: 8px;
+    background-color: silver;
+    border-style: none;
+}
+
+li {
+    margin: 2px;
+    list-style: none;
+    padding: 10px;
+    width: 280px;
+    text-align: center;
+
+}
+
+.done {
+    background-color:  rgb(48, 58, 53); 
+}
+
