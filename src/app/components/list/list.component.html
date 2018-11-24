@@ -1,0 +1,11 @@
+<ul *ngIf='tasks.length!=0' [ngStyle]="{
+  'background-color': tasks.length > 2 ? 'rgb(39, 41, 46)': null
+  }">
+  <h2>Lista de Tarefa</h2>
+  <li *ngFor ="let task of tasks; let i = index"
+    [ngClass]="{'done': task.done}"
+  >
+  {{task.taskName}} - {{task.done}}
+  <button (click)="del(i)">Apagar</button>
+  </li>
+  </ul>

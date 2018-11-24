@@ -1,0 +1,5 @@
+<input id="tarefa" type="text" placeholder="Tarefa" #taskName>
+<input type="checkbox" name="done" #done>
+<button id="salvar" (click)="add(taskName.value, done.checked)">Salvar</button>
+
+<app-list [tasks]="tasks"></app-list>
